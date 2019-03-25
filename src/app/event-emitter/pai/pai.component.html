@@ -1,0 +1,14 @@
+<h1>Pai</h1>
+<div>
+    <ul>
+        <li *ngFor="let f of familia">
+            {{f.nome}} {{f.sobreNome}}
+        </li>
+    </ul>
+</div>
+
+
+<app-filho [recebeFamilia]="familia" (respostaFamilia)="reciverFeedback($event)"></app-filho>
+
+
+

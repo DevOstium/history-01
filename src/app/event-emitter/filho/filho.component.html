@@ -1,0 +1,12 @@
+    <h1>Filho</h1>
+
+    <ul>
+        <li *ngFor="let f of recebeFamilia">
+          {{f.nome}} {{f.sobreNome}}
+        </li>
+    </ul>
+
+
+    <div>
+        <button (click)="feedback()">Enviar dados do Filho para o Pai</button>
+    </div>
